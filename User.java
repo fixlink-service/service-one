@@ -2,6 +2,6 @@ public class User {
   private String name;
 
   public String getNameUpperCase(){
-    return name.toUpperCase(); // NPE bug
+    return name == null? null: name.toUpperCase(); // NPE bug
   }
 }
